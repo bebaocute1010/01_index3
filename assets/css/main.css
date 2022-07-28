@@ -771,6 +771,21 @@ body a:hover{
 .blogs{
     margin-top: 90px;
 }
+.date-of-blog{
+    background-color: #fdbb29;
+    align-items: center;
+    padding: 10px 15px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.day-of-blog{
+    font-size: 24px;
+    font-weight: 700;
+}
+.month-of-blog{
+    font-size: 13px;
+}
 .blogs-title{
     margin-bottom: 13px;
     position: relative;
@@ -779,6 +794,7 @@ body a:hover{
     margin-left: -1px;
     border: 1px solid #eee;
     padding-bottom: 30px;
+    position: relative;
 }
 .post-info{
     padding-left: 30px;
