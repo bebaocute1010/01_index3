@@ -56,6 +56,7 @@ body a {
 
 body a:hover {
     color: #FDBB29;
+    text-decoration: none;
 }
 
 figure {
@@ -272,11 +273,11 @@ body figure:hover img {
     position: relative;
 }
 
-.header-email-customer:hover a {
+.header-email-customer:hover a{
     text-decoration: underline;
 }
 
-.header-phone-customer:hover a {
+.header-phone-customer:hover a{
     text-decoration: underline;
 }
 
