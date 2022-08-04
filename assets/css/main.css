@@ -944,10 +944,9 @@ body figure:hover img {
 }
 
 .popular-products-list-title {
-    padding-right: 40px;
+    padding: 25px 30px;
     border: #eee solid 1px;
     border-right: unset;
-    padding-left: 35px;
 }
 
 #popular-prd-4 {
