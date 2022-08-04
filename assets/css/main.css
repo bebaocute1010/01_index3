@@ -259,6 +259,7 @@ body figure:hover img {
     display: flex;
     margin-top: 30px;
     float: left;
+    margin-left: 20px;
 }
 
 .header-bottom-customer-content ul {
@@ -464,10 +465,6 @@ body figure:hover img {
     top: 1px;
 }
 
-.megamenu-list-item {
-    position: relative;
-}
-
 .megamenu-list-item #home:hover .dropdown-menu {
     display: block;
 }
@@ -483,10 +480,14 @@ body figure:hover img {
 .megamenu-list-item {
     line-height: 52px;
     font-size: 14px;
+    position: relative;
+    padding-left: 30px;
 }
 
 .megamenu-list-item ul li {
     position: relative;
+    padding: 0 20px;
+    float: left;
 }
 
 .megamenu-list-item li:hover {
@@ -513,11 +514,6 @@ body figure:hover img {
     content: '\e5cf';
     position: absolute;
     top: 1px;
-}
-
-.megamenu-list-item ul li {
-    padding: 0 20px;
-    float: left;
 }
 
 .textbox-search {
@@ -951,6 +947,7 @@ body figure:hover img {
     padding-right: 40px;
     border: #eee solid 1px;
     border-right: unset;
+    padding-left: 35px;
 }
 
 #popular-prd-4 {
