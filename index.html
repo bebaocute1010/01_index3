@@ -1,22 +1,23 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-"http://www.w3.org/TR/html4/strict.dtd">
-<html lang="en"> 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- IMPORT Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- IMPORT Slider -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <!-- IMPORT My file -->
-    <link rel="stylesheet" href="assets/css/grid.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/js/main.js">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script type="text/javascript" src="./assets/js/main.js"></script>
 
     <!-- IMPORT Font -->
     <link rel="stylesheet"
@@ -32,21 +33,20 @@
 </head>
 
 <body>
-    
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="jquery.min.js"></script>
-    <script src="owlcarousel/owl.carousel.min.js"></script>
- 
+    <div class="modal" id="myModal">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
 
-    
-    
-    <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <iframe class="modal-content" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.641924527718!2d105.82419395563618!3d21.00698601899676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac8109765ba5%3A0xd84740ece05680ee!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBUaOG7p3kgbOG7o2k!5e0!3m2!1svi!2s!4v1659593934860!5m2!1svi!2s" width="930" height="570" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="modal-body">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6337.106763574421!2d-122.082447!3d37.42403!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1e154343318b59a3!2zMzfCsDI1JzIxLjQiTiAxMjLCsDA1JzAzLjEiVw!5e0!3m2!1sen!2sus!4v1659607558065!5m2!1sen!2sus" width="1030" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+        </div>
     </div>
-
 
     <!-- Header -->
     <div class="header">
@@ -276,10 +276,10 @@
                     </div>
                     <div class="slider-content-btn">
                         <div class="slider-content-btn-shop-now">
-                            <button class="btn-shop-now"><a href="#">Shop Now</a></button>
+                            <button class="btn-shop-now">Shop Now</button>
                         </div>
                         <div class="slider-content-btn-explore-products">
-                            <button class="btn-explore-products"><a href="#">Explore Products</a></button>
+                            <button class="btn-explore-products">Explore Products</button>
                         </div>
                     </div>
                 </div>
@@ -302,10 +302,10 @@
                     </div>
                     <div class="slider-content-btn">
                         <div class="slider-content-btn-shop-now">
-                            <button class="btn-shop-now"><a href="#">Shop Now</a></button>
+                            <button class="btn-shop-now">Shop Now</button>
                         </div>
                         <div class="slider-content-btn-explore-products">
-                            <button class="btn-explore-products"><a href="#">Explore Products</a></button>
+                            <button class="btn-explore-products">Explore Products</button>
                         </div>
                     </div>
                 </div>
@@ -328,10 +328,10 @@
                     </div>
                     <div class="slider-content-btn">
                         <div class="slider-content-btn-shop-now">
-                            <button class="btn-shop-now"><a href="#">Shop Now</a></button>
+                            <button class="btn-shop-now">Shop Now</button>
                         </div>
                         <div class="slider-content-btn-explore-products">
-                            <button class="btn-explore-products"><a href="#">Explore Products</a></button>
+                            <button class="btn-explore-products">Explore Products</button>
                         </div>
                     </div>
                 </div>
@@ -346,14 +346,14 @@
                 <div class="col-lg-6">
                     <div class="banner-image">
                         <a href="#">
-                            <img src="./media//banner/banner-1.jpg" alt="banner">
+                            <figure><img src="./media//banner/banner-1.jpg" alt="banner"></figure>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="banner-image">
                         <a href="#">
-                            <img src="./media//banner/banner-2.jpg" alt="banner">
+                            <figure><img src="./media//banner/banner-2.jpg" alt="banner"></figure>
                         </a>
                     </div>
                 </div>
@@ -372,25 +372,25 @@
                     <div class="deal-of-weak-title-time-countdown">
                         <div class="time-countdown-day">
                             <div class="time-info">
-                                <div class="num-time-countdown">06</div>
+                                <div class="num-time-countdown" id="days">06</div>
                                 <div class="time-countdown-name">Days</div>
                             </div>
                         </div>
                         <div class="time-countdown-hour">
                             <div class="time-info">
-                                <div class="num-time-countdown">23</div>
+                                <div class="num-time-countdown" id="hours">23</div>
                                 <div class="time-countdown-name">Hours</div>
                             </div>
                         </div>
                         <div class="time-countdown-minute">
                             <div class="time-info">
-                                <div class="num-time-countdown">23</div>
+                                <div class="num-time-countdown" id="mins">23</div>
                                 <div class="time-countdown-name">Mins</div>
                             </div>
                         </div>
                         <div class="time-countdown-second">
                             <div class="time-info">
-                                <div class="num-time-countdown">23</div>
+                                <div class="num-time-countdown" id="secs">23</div>
                                 <div class="time-countdown-name">Secs</div>
                             </div>
                         </div>
@@ -673,7 +673,9 @@
                     </div>
                 </div>
 
-                <div><a href="#"><img src="./media/banner/banner3.jpg" alt="banner3"></a></div>
+                <div><a href="#">
+                        <figure><img src="./media/banner/banner3.jpg" alt="banner3"></figure>
+                    </a></div>
 
                 <div class="popular-products-grid">
                     <div class="row">
@@ -794,36 +796,56 @@
                 <div class="brand-content">
                     <div class="row">
                         <div class="col">
-                            <a href="#"><img class="img-brand" src="./media/brand/brand (1).jpg" alt="brand"></a>
+                            <a href="#">
+                                <figure><img class="img-brand" src="./media/brand/brand (1).jpg" alt="brand"></figure>
+                            </a>
                         </div>
                         <div class="col">
-                            <a href="#"><img class="img-brand" src="./media/brand/brand (2).jpg" alt="brand"></a>
+                            <a href="#">
+                                <figure><img class="img-brand" src="./media/brand/brand (2).jpg" alt="brand"></figure>
+                            </a>
                         </div>
                         <div class="col">
-                            <a href="#"><img class="img-brand" src="./media/brand/brand (3).jpg" alt="brand"></a>
+                            <a href="#">
+                                <figure><img class="img-brand" src="./media/brand/brand (3).jpg" alt="brand"></figure>
+                            </a>
                         </div>
                         <div class="col">
-                            <a href="#"><img class="img-brand" src="./media/brand/brand (4).jpg" alt="brand"></a>
+                            <a href="#">
+                                <figure><img class="img-brand" src="./media/brand/brand (4).jpg" alt="brand"></figure>
+                            </a>
                         </div>
                         <div class="col">
-                            <a href="#"><img class="img-brand" src="./media/brand/brand (5).jpg" alt="brand"></a>
+                            <a href="#">
+                                <figure><img class="img-brand" src="./media/brand/brand (5).jpg" alt="brand"></figure>
+                            </a>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            <a href="#"><img class="img-brand" src="./media/brand/brand (6).jpg" alt="brand"></a>
+                            <a href="#">
+                                <figure><img class="img-brand" src="./media/brand/brand (6).jpg" alt="brand"></figure>
+                            </a>
                         </div>
                         <div class="col">
-                            <a href="#"><img class="img-brand" src="./media/brand/brand (7).jpg" alt="brand"></a>
+                            <a href="#">
+                                <figure><img class="img-brand" src="./media/brand/brand (7).jpg" alt="brand"></figure>
+                            </a>
                         </div>
                         <div class="col">
-                            <a href="#"><img class="img-brand" src="./media/brand/brand (8).jpg" alt="brand"></a>
+                            <a href="#">
+                                <figure><img class="img-brand" src="./media/brand/brand (8).jpg" alt="brand"></figure>
+                            </a>
                         </div>
                         <div class="col">
-                            <a href="#"><img class="img-brand" src="./media/brand/brand (9).jpg" alt="brand"></a>
+                            <a href="#">
+                                <figure><img class="img-brand" src="./media/brand/brand (9).jpg" alt="brand"></figure>
+                            </a>
                         </div>
                         <div class="col">
-                            <a href="#"><img class="img-brand" src="./media/brand/brand (10).jpg" alt="brand"></a>
+                            <a href="#">
+                                <figure><img class="img-brand" src="./media/brand/brand (10).jpg" alt="brand" </figure>>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -841,16 +863,20 @@
 
             <div class="featured-categories-content">
                 <div class="featured-categories-banner">
-                    <a href="#"><img src="./media/banner/banner-4.jpg" alt="featured-categories-banner"></a>
+                    <a href="#">
+                        <figure><img src="./media/banner/banner-4.jpg" alt="featured-categories-banner"></figure>
+                    </a>
                 </div>
 
                 <div class="featured-categories-grid-products">
                     <div class="row">
                         <div class="col-lg-4" id="featured-prd-1">
                             <div>
-                                <a href="#"><img class="img-featured-categories-products"
-                                        src="./media/products/featured-categories-1.jpg"
-                                        alt="img-featured-categories-prd"></a>
+                                <a href="#">
+                                    <figure><img class="img-featured-categories-products"
+                                            src="./media/products/featured-categories-1.jpg"
+                                            alt="img-featured-categories-prd"></figure>
+                                </a>
                             </div>
                             <div class="featured-categories-products-info">
                                 <div class="featured-categories-prd-type"><a href="#">Mobile & Tablets</a></div>
@@ -859,9 +885,11 @@
                         </div>
                         <div class="col-lg-4">
                             <div>
-                                <a href="#"><img class="img-featured-categories-products"
-                                        src="./media/products/featured-categories-2.jpg"
-                                        alt="img-featured-categories-prd"></a>
+                                <a href="#">
+                                    <figure><img class="img-featured-categories-products"
+                                            src="./media/products/featured-categories-2.jpg"
+                                            alt="img-featured-categories-prd"></figure>
+                                </a>
                             </div>
                             <div class="featured-categories-products-info">
                                 <div class="featured-categories-prd-type"><a href="#">Game Console</a></div>
@@ -870,9 +898,11 @@
                         </div>
                         <div class="col-lg-4">
                             <div>
-                                <a href="#"><img class="img-featured-categories-products"
-                                        src="./media/products/featured-categories-3.jpg"
-                                        alt="img-featured-categories-prd"></a>
+                                <a href="#">
+                                    <figure><img class="img-featured-categories-products"
+                                            src="./media/products/featured-categories-3.jpg"
+                                            alt="img-featured-categories-prd"></figure>
+                                </a>
                             </div>
                             <div class="featured-categories-products-info">
                                 <div class="featured-categories-prd-type"><a href="#">Virutal Reality Glasses</a></div>
@@ -881,9 +911,11 @@
                         </div>
                         <div class="col-lg-4" id="featured-prd-4">
                             <div>
-                                <a href="#"><img class="img-featured-categories-products"
-                                        src="./media/products/featured-categories-4.jpg"
-                                        alt="img-featured-categories-prd"></a>
+                                <a href="#">
+                                    <figure><img class="img-featured-categories-products"
+                                            src="./media/products/featured-categories-4.jpg"
+                                            alt="img-featured-categories-prd"></figure>
+                                </a>
                             </div>
                             <div class="featured-categories-products-info">
                                 <div class="featured-categories-prd-type"><a href="#">Camera & Videos</a></div>
@@ -892,9 +924,11 @@
                         </div>
                         <div class="col-lg-4" id="featured-prd-5">
                             <div>
-                                <a href="#"><img class="img-featured-categories-products"
-                                        src="./media/products/featured-categories-5.jpg"
-                                        alt="img-featured-categories-prd"></a>
+                                <a href="#">
+                                    <figure><img class="img-featured-categories-products"
+                                            src="./media/products/featured-categories-5.jpg"
+                                            alt="img-featured-categories-prd"></figure>
+                                </a>
                             </div>
                             <div class="featured-categories-products-info">
                                 <div class="featured-categories-prd-type"><a href="#">Headphones</a></div>
@@ -903,9 +937,11 @@
                         </div>
                         <div class="col-lg-4" id="featured-prd-6">
                             <div>
-                                <a href="#"><img class="img-featured-categories-products"
-                                        src="./media/products/featured-categories-6.jpg"
-                                        alt="img-featured-categories-prd"></a>
+                                <a href="#">
+                                    <figure><img class="img-featured-categories-products"
+                                            src="./media/products/featured-categories-6.jpg"
+                                            alt="img-featured-categories-prd"></figure>
+                                </a>
                             </div>
                             <div class="featured-categories-products-info">
                                 <div class="featured-categories-prd-type"><a href="#">Smart TV</a></div>
@@ -1034,8 +1070,9 @@
                 <div class="row">
                     <div class="col" id="blog-1">
                         <div class="info-blog">
-                            <div class="img-blogs"><a href="#"><img src="./media/blogs/place hold.jpg"
-                                        alt="img-blogs"></a>
+                            <div class="img-blogs"><a href="#">
+                                    <figure><img src="./media/blogs/place hold.jpg" alt="img-blogs"></figure>
+                                </a>
                             </div>
                             <div>
                                 <label class="date-of-blog">
@@ -1061,8 +1098,9 @@
                     <div class="col">
                         <div class="info-blog">
                             <div>
-                                <div class="img-blogs"><a href="#"><img src="./media/blogs/place hold-1.jpg"
-                                            alt="img-blogs"></a></div>
+                                <div class="img-blogs"><a href="#">
+                                        <figure><img src="./media/blogs/place hold-1.jpg" alt="img-blogs"></figure>
+                                    </a></div>
                                 <div>
                                     <label class="date-of-blog">
                                         <div><strong class="day-of-blog">13</strong></div>
@@ -1088,8 +1126,9 @@
                     <div class="col" id="blog-3">
                         <div class="info-blog">
                             <div>
-                                <div class="img-blogs"><a href="#"><img src="./media/blogs/place hold-2.jpg"
-                                            alt="img-blogs"></a></div>
+                                <div class="img-blogs"><a href="#">
+                                        <figure><img src="./media/blogs/place hold-2.jpg" alt="img-blogs"></figure>
+                                    </a></div>
                                 <div>
                                     <label class="date-of-blog">
                                         <div><strong class="day-of-blog">13</strong></div>
@@ -1150,7 +1189,9 @@
                                     <span>Address: 8398 N. Oak Valley Street Bronx, NY 10462</span>
                                 </div>
                                 <div class="show-on-map">
-                                    <span id="myImg">Show On Map</span>
+                                    <button type="button" data-toggle="modal" data-target="#myModal">
+                                        Show On Map
+                                    </button>
                                 </div>
                             </div>
                             <div class="open-time">
@@ -1211,10 +1252,18 @@
                             <div class="follow-info">
                                 <span class="follow-title">Follow Us:</span>
                                 <ul class="list-mxh">
-                                    <li><a href="#"><img src="./media/icons/facebook.png" alt="icon-mxh"></a></li>
-                                    <li><a href="#"><img src="./media/icons/twitter.png" alt="icon-mxh"></a></li>
-                                    <li><a href="#"><img src="./media/icons/youtube.png" alt="icon-mxh"></a></li>
-                                    <li><a href="#"><img src="./media/icons/instagram.png" alt="icon-mxh"></a></li>
+                                    <li><a href="#">
+                                            <figure><img src="./media/icons/facebook.png" alt="icon-mxh"></figure>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <figure><img src="./media/icons/twitter.png" alt="icon-mxh"></figure>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <figure><img src="./media/icons/youtube.png" alt="icon-mxh"></figure>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <figure><img src="./media/icons/instagram.png" alt="icon-mxh"></figure>
+                                        </a></li>
                                 </ul>
                             </div>
                         </div>
@@ -1239,8 +1288,21 @@
             </div>
         </div>
     </div>
-
-    <script src="./assets/js/main.js"></script>
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <iframe class="modal-content"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.641924527718!2d105.82419395563618!3d21.00698601899676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac8109765ba5%3A0xd84740ece05680ee!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBUaOG7p3kgbOG7o2k!5e0!3m2!1svi!2s!4v1659593934860!5m2!1svi!2s"
+                        width="930" height="570" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

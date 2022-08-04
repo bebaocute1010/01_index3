@@ -15,17 +15,6 @@
     padding-left: 15px;
     padding-right: 15px;
 }
-img{
-    width: auto;
-    height: auto;
-    max-width: 100%;
-}
-ul{
-    list-style: none;
-}
-span{
-    padding: 0;
-}
 .col-lg-4
 {
     padding-left: 0;
