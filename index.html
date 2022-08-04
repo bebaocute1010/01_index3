@@ -1,8 +1,9 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en"> 
 
 <head>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- IMPORT Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -28,17 +29,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
 
+    <!-- <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" /> -->
 </head>
 
 <body>
+    
+    <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script> -->
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="jquery.min.js"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
-    <script src="./assets/js/main.js"></script>
+ 
 
+    
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
 
 
     <!-- Header -->
@@ -70,13 +80,25 @@
                                 <span>Language</span>
                             </div>
                             <div class="language-content">
-                                <span>Enghlish</span>
+                                <span class="dropdown">Enghlish
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-item">VietNamese</li>
+                                        <li class="dropdown-item">Russian</li>
+                                        <li class="dropdown-item">Spanish</li>
+                                    </ul>
+                                </span>
                             </div>
                             <div class="header-right-content-currency">
                                 <span>Currency</span>
                             </div>
                             <div class="currency-content">
-                                <span>USD</span>
+                                <span class="dropdown">USD
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-item">VND</li>
+                                        <li class="dropdown-item">Rup</li>
+                                        <li class="dropdown-item">Euro</li>
+                                    </ul>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -155,19 +177,23 @@
                                                 New Arrivals
                                                 <ul class="dropdown-menu" id="sub-drop-id-2">
                                                     <div class="container">
-                                                            <ul class="list-sub-menu">
-                                                                <span class="title-sub-menu">Computer & Laptops
-                                                                    <li class="dropdown-item"><a href="#">Gaming PC</a></li>
-                                                                    <li class="dropdown-item"><a href="#">Notebook Laptop</a></li>
-                                                                    <li class="dropdown-item"><a href="#">Computer Monitor</a></li>
-                                                                </span>
-                                                            </ul>
-                                                            <ul class="list-sub-menu">
-                                                                <span class="title-sub-menu">Loudspeaker
-                                                                    <li class="dropdown-item"><a href="#">Speaker Waterproof</a></li>
-                                                                    <li class="dropdown-item"><a href="#">Bluetooth Speaker</a></li>
-                                                                </span>
-                                                            </ul>
+                                                        <ul class="list-sub-menu">
+                                                            <span class="title-sub-menu">Computer & Laptops
+                                                                <li class="dropdown-item"><a href="#">Gaming PC</a></li>
+                                                                <li class="dropdown-item"><a href="#">Notebook
+                                                                        Laptop</a></li>
+                                                                <li class="dropdown-item"><a href="#">Computer
+                                                                        Monitor</a></li>
+                                                            </span>
+                                                        </ul>
+                                                        <ul class="list-sub-menu">
+                                                            <span class="title-sub-menu">Loudspeaker
+                                                                <li class="dropdown-item"><a href="#">Speaker
+                                                                        Waterproof</a></li>
+                                                                <li class="dropdown-item"><a href="#">Bluetooth
+                                                                        Speaker</a></li>
+                                                            </span>
+                                                        </ul>
                                                     </div>
                                                 </ul>
                                             </div>
@@ -323,14 +349,14 @@
                 <div class="col-lg-6">
                     <div class="banner-image">
                         <a href="#">
-                            <img width="630" height="270" src="./media//banner/banner-1.jpg" alt="banner">
+                            <img src="./media//banner/banner-1.jpg" alt="banner">
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="banner-image">
                         <a href="#">
-                            <img width="630" height="270" src="./media//banner/banner-2.jpg" alt="banner">
+                            <img src="./media//banner/banner-2.jpg" alt="banner">
                         </a>
                     </div>
                 </div>
@@ -383,7 +409,7 @@
                         </div>
                         <a href="#"><img src="./media/products/product-sale-1.jpg" alt="img-product-sale"></a>
                         <div class="product-info">
-                            <a href="#" class="product-type">Mobile & Tablets</a>
+                            <div><a href="#" class="product-type">Mobile & Tablets</a></div>
                             <div><a href="#" class="product-link">2021 Apple 11-inch iPad Pro Wi-Fi,
                                     Cellular
                                     2TB -
@@ -402,7 +428,7 @@
                         </div>
                         <a href="#"><img src="./media/products/product-sale-2.jpg" alt="img-product-sale"></a>
                         <div class="product-info">
-                            <a href="#" class="product-type">Loudspeaker</a>
+                            <div><a href="#" class="product-type">Loudspeaker</a></div>
                             <div><a href="#" class="product-link">BZO Charge Waterproof Portable
                                     Bluetooth
                                     Speaker...
@@ -421,7 +447,7 @@
                         </div>
                         <a href="#"><img src="./media/products/product-sale-3.jpg" alt="img-product-sale"></a>
                         <div class="product-info">
-                            <a href="#" class="product-type">Game Console</a>
+                            <div><a href="#" class="product-type">Game Console</a></div>
                             <div><a href="#" class="product-link">Apple iPhone 12 (64GB) Locked,
                                     Carrier
                                     Subscription</a></div>
@@ -439,7 +465,7 @@
                         </div>
                         <a href="#"><img src="./media/products/product-sale-4.jpg" alt="img-product-sale"></a>
                         <div class="product-info">
-                            <a href="#" class="product-type">Smartwatches</a>
+                            <div><a href="#" class="product-type">Smartwatches</a></div>
                             <div><a href="#" class="product-link">Bluetooth Call Smart Watch 90 Days
                                     Standby
                                     1.2
@@ -458,7 +484,7 @@
                         </div>
                         <a href="#"><img src="./media/products/product-sale-5.jpg" alt="img-product-sale"></a>
                         <div class="product-info">
-                            <a href="#" class="product-type">Virtual Reality Glasses</a>
+                            <div><a href="#" class="product-type">Virtual Reality Glasses</a></div>
                             <div><a href="#" class="product-link">Shinecon G-06EB New 3D Virtual
                                     Reality
                                     Glasses</a></div>
@@ -476,7 +502,7 @@
                         </div>
                         <a href="#"><img src="./media/products/popular-products-1.jpg" alt="img-product-sale"></a>
                         <div class="product-info">
-                            <a href="#" class="product-type">Loudspeaker</a>
+                            <div><a href="#" class="product-type">Loudspeaker</a></div>
                             <div><a href="#" class="product-link">New Waterproof Speaker Portable Wireless </a></div>
                             <div class="product-rate"><img src="./media/icons/icon-rate.png" alt="icon-rate">
                             </div>
@@ -501,7 +527,7 @@
 
             <div class="new-arrivals-grid-product">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4" id="arrivals-prd-1">
                         <div class="new-arrivals-product">
                             <div>
                                 <label class="label-level-sale">-28%</label>
@@ -509,7 +535,7 @@
                             <a href="#"><img class="img-arrivals-prd" src="./media/products/new-arrivals-prd1.jpg"
                                     alt="img-arrivial-prd"></a>
                             <div class="arrivals-prd-info">
-                                <a href="#" class="product-type">Mobile & Tablets</a>
+                                <div><a href="#" class="product-type">Mobile & Tablets</a></div>
                                 <div><a href="#" class="product-link">2021 Apple 11-inch iPad Pro Wi-Fi, Cellular 2TB -
                                         Space...
                                         Gray</a></div>
@@ -528,7 +554,7 @@
                             <a href="#"><img class="img-arrivals-prd" src="./media/products/new-arrivals-prd2.jpg"
                                     alt="img-arrivial-prd"></a>
                             <div class="arrivals-prd-info">
-                                <a href="#" class="product-type">Smartwatches</a>
+                                <div><a href="#" class="product-type">Smartwatches</a></div>
                                 <div><a href="#" class="product-link">Bluetooth Call Smart Watch 90 Days Standby 1.2
                                         Inch</a></div>
                                 <div class="product-rate"><img src="./media/icons/icon-rate.png" alt="icon-rate">
@@ -545,7 +571,7 @@
                             <a href="#"><img class="img-arrivals-prd" src="./media/products/new-arrivals-prd3.jpg"
                                     alt="img-arrivial-prd"></a>
                             <div class="arrivals-prd-info">
-                                <a href="#" class="product-type">Game Console </a>
+                                <div><a href="#" class="product-type">Game Console </a></div>
                                 <div><a href="#" class="product-link">Apple iPhone 12 (64GB) Locked, Carrier
                                         Subscription</a></div>
                                 <div class="product-rate"><img src="./media/icons/icon-rate.png" alt="icon-rate">
@@ -558,11 +584,11 @@
                     </div>
 
                     <div class="col-lg-4">
-                        <div class="new-arrivals-product">
+                        <div class="new-arrivals-product" id="arrivals-prd-4">
                             <a href="#"><img class="img-arrivals-prd" src="./media/products/new-arrivals-prd4.jpg"
                                     alt="img-arrivial-prd"></a>
                             <div class="arrivals-prd-info">
-                                <a href="#" class="product-type">Loudspeaker </a>
+                                <div><a href="#" class="product-type">Loudspeaker </a></div>
                                 <div><a href="#" class="product-link">Airdopes 381 Tws Earbuds With Asap Charge
                                         (Green)</a></div>
                                 <div class="product-rate"><img src="./media/icons/icon-rate.png" alt="icon-rate">
@@ -575,11 +601,11 @@
                     </div>
 
                     <div class="col-lg-4">
-                        <div class="new-arrivals-product">
+                        <div class="new-arrivals-product" id="arrivals-prd-5">
                             <a href="#"><img class="img-arrivals-prd" src="./media/products/new-arrivals-prd5.jpg"
                                     alt="img-arrivial-prd"></a>
                             <div class="arrivals-prd-info">
-                                <a href="#" class="product-type">Loudspeaker </a>
+                                <div><a href="#" class="product-type">Loudspeaker </a></div>
                                 <div><a href="#" class="product-link">BZO Charge Waterproof Portable Bluetooth Speaker
                                         (Yellow)</a></div>
                                 <div class="product-rate"><img src="./media/icons/icon-rate.png" alt="icon-rate">
@@ -592,11 +618,11 @@
                     </div>
 
                     <div class="col-lg-4">
-                        <div class="new-arrivals-product">
+                        <div class="new-arrivals-product" id="arrivals-prd-6">
                             <a href="#"><img class="img-arrivals-prd" src="./media/products/new-arrivals-prd6.jpg"
                                     alt="img-arrivial-prd"></a>
                             <div class="arrivals-prd-info">
-                                <a href="#" class="product-type">Virtual Reality Glasses</a>
+                                <div><a href="#" class="product-type">Virtual Reality Glasses</a></div>
                                 <div><a href="#" class="product-link">Shinecon G-06EB New 3D Virtual Reality Glasses</a>
                                 </div>
                                 <div class="product-rate"><img src="./media/icons/icon-rate.png" alt="icon-rate">
@@ -656,8 +682,8 @@
                     <div class="row">
                         <div class="col-lg-4">
                             <div class="popular-products-item">
-                                <a href="#"><img class="img-arrivals-prd"
-                                        src="./media/products/popular-products-1.jpg" alt="img-popular-prd"></a>
+                                <a href="#"><img class="img-arrivals-prd" src="./media/products/popular-products-1.jpg"
+                                        alt="img-popular-prd"></a>
                                 <div class="arrivals-prd-info">
                                     <a href="#" class="product-type">Loudspeaker </a>
                                     <div><a href="#" class="product-link">New Waterproof Speaker Portable Wireless </a>
@@ -675,8 +701,8 @@
                                 <div>
                                     <label class="label-level-sale">NEW</label>
                                 </div>
-                                <a href="#"><img class="img-arrivals-prd"
-                                        src="./media/products/popular-products-2.jpg" mg-popular-prd></a>
+                                <a href="#"><img class="img-arrivals-prd" src="./media/products/popular-products-2.jpg"
+                                        mg-popular-prd></a>
                                 <div class="arrivals-prd-info">
                                     <a href="#" class="product-type">Cameras & Videos</a>
                                     <div><a href="#" class="product-link">2021 Apple 11-inch iPad Pro Wi-Fi, Cellular
@@ -693,8 +719,8 @@
                         </div>
                         <div class="col-lg-4">
                             <div class="popular-products-item">
-                                <a href="#"><img class="img-arrivals-prd"
-                                        src="./media/products/popular-products-3.jpg" mg-popular-prd></a>
+                                <a href="#"><img class="img-arrivals-prd" src="./media/products/popular-products-3.jpg"
+                                        mg-popular-prd></a>
                                 <div class="arrivals-prd-info">
                                     <a href="#" class="product-type">Game Console </a>
                                     <div><a href="#" class="product-link">PowerA Enhanced Wired A7 Controller For
@@ -707,10 +733,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4" id="popular-prd-4">
                             <div class="popular-products-item">
-                                <a href="#"><img class="img-arrivals-prd"
-                                        src="./media/products/popular-products-4.jpg" mg-popular-prd></a>
+                                <a href="#"><img class="img-arrivals-prd" src="./media/products/popular-products-4.jpg"
+                                        mg-popular-prd></a>
                                 <div class="arrivals-prd-info">
                                     <a href="#" class="product-type">Smartwatches</a>
                                     <div><a href="#" class="product-link">Apple 11-inch iPad Pro (2021) Wi-Fi 128GB</a>
@@ -723,10 +749,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4" id="popular-prd-5">
                             <div class="popular-products-item">
-                                <a href="#"><img class="img-arrivals-prd"
-                                        src="./media/products/popular-products-5.jpg" mg-popular-prd></a>
+                                <a href="#"><img class="img-arrivals-prd" src="./media/products/popular-products-5.jpg"
+                                        mg-popular-prd></a>
                                 <div class="arrivals-prd-info">
                                     <a href="#" class="product-type">Loudspeaker </a>
                                     <div><a href="#" class="product-link">Boat Airdopes 441 Bluetooth Truly Wireless</a>
@@ -739,13 +765,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4" id="popular-prd-6">
                             <div class="popular-products-item">
                                 <div>
                                     <label class="label-level-sale">NEW</label>
                                 </div>
-                                <a href="#"><img class="img-arrivals-prd"
-                                        src="./media/products/popular-products-6.jpg" mg-popular-prd></a>
+                                <a href="#"><img class="img-arrivals-prd" src="./media/products/popular-products-6.jpg"
+                                        mg-popular-prd></a>
                                 <div class="arrivals-prd-info">
                                     <a href="#" class="product-type">Smart TV</a>
                                     <div><a href="#" class="product-link">Smart TV Prime Descuento Online Off 68%</a>
@@ -823,7 +849,7 @@
 
                 <div class="featured-categories-grid-products">
                     <div class="row">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4" id="featured-prd-1">
                             <div>
                                 <a href="#"><img class="img-featured-categories-products"
                                         src="./media/products/featured-categories-1.jpg"
@@ -856,7 +882,7 @@
                                 <div class="featured-categories-prd-quantity">04 Products</div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4" id="featured-prd-4">
                             <div>
                                 <a href="#"><img class="img-featured-categories-products"
                                         src="./media/products/featured-categories-4.jpg"
@@ -867,7 +893,7 @@
                                 <div class="featured-categories-prd-quantity">07 Products</div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4" id="featured-prd-5">
                             <div>
                                 <a href="#"><img class="img-featured-categories-products"
                                         src="./media/products/featured-categories-5.jpg"
@@ -878,7 +904,7 @@
                                 <div class="featured-categories-prd-quantity">14 Products</div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4" id="featured-prd-6">
                             <div>
                                 <a href="#"><img class="img-featured-categories-products"
                                         src="./media/products/featured-categories-6.jpg"
@@ -902,7 +928,7 @@
                 <div class="content-title">Recommended For You</div>
                 <div><a href="#"><span class="btn-viewall">View All</span></a></div>
             </div>
-    
+
             <div class="recommend-grid-product">
                 <div class="recommended-prd">
                     <div class="recommend-products">
@@ -910,87 +936,89 @@
                             <a href="#"><img src="./media/products/recommend-1.jpg" alt="-img-recommend-prd"></a>
                         </div>
                         <div class="recommend-product-info">
-                            <a href="#" class="product-type">Game Console</a>
-                            <a href="#" class="product-link">GameSir T1s Wireless Game Controller Joystick
-                                Dual</a>
+                            <div class="product-type"><a href="#">Game Console</a></div>
+                            <div class="product-link"><a href="#">GameSir T1s Wireless Game Controller Joystick
+                                    Dual</a></div>
                             <div class="product-rate"><img src="./media/icons/icon-rate.png" alt="icon-rate">
                             </div>
-                            <span class="price">$199.99</span>
+                            <div class="price"><span>$199.99</span></div>
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="recommended-prd">
                     <div class="recommend-products">
                         <div class="img-recommend-product">
                             <a href="#"><img src="./media/products/popular-products-4.jpg" alt="-img-recommend-prd"></a>
                         </div>
                         <div class="recommend-product-info">
-                            <a href="#" class="product-type">Smartwatches</a>
-                            <a href="#" class="product-link">Apple 11-inch iPad Pro (2021) Wi-Fi 128GB</a>
+                            <div class="product-type"><a href="#">Smartwatches</a></div>
+                            <div class="product-link"><a href="#">Apple 11-inch iPad Pro (2021) Wi-Fi 128GB</a></div>
                             <div class="product-rate"><img src="./media/icons/icon-rate.png" alt="icon-rate">
                             </div>
-                            <span class="price">$109.99</span>
+                            <div class="price"><span>$109.99</span></div>
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="recommended-prd">
                     <div class="recommend-products">
                         <div class="img-recommend-product">
                             <a href="#"><img src="./media/products/recommend-2.jpg" alt="-img-recommend-prd"></a>
                         </div>
                         <div class="recommend-product-info">
-                            <a href="#" class="product-type">Loudspeaker</a>
-                            <a href="#" class="product-link">Ortizan Portable Bluetooth Speaker, Waterproof</a>
+                            <div class="product-type"><a href="#">Loudspeaker</a></div>
+                            <div class="product-link"><a href="#">Ortizan Portable Bluetooth Speaker, Waterproof</a>
+                            </div>
                             <div class="product-rate"><img src="./media/icons/icon-rate.png" alt="icon-rate">
                             </div>
-                            <span class="price">$79.99</span>
+                            <div class="price"><span>$79.99</span></div>
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="recommended-prd">
                     <div class="recommend-products">
                         <div class="img-recommend-product">
                             <a href="#"><img src="./media/products/recommend-3.jpg" alt="-img-recommend-prd"></a>
                         </div>
                         <div class="recommend-product-info">
-                            <a href="#" class="product-type">Headphones</a>
-                            <a href="#" class="product-link">Airdopes 381 Tws Earbuds With Asap Charge</a>
+                            <div class="product-type"><a href="#">Headphones</a></div>
+                            <div class="product-link"><a href="#">Airdopes 381 Tws Earbuds With Asap Charge</a></div>
                             <div class="product-rate"><img src="./media/icons/icon-rate.png" alt="icon-rate">
                             </div>
-                            <span class="price">$80.00</span>
+                            <div class="price"><span>$80.00</span></div>
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="recommended-prd">
                     <div class="recommend-products">
                         <div class="img-recommend-product">
                             <a href="#"><img src="./media/products/recommend-4.jpg" alt="-img-recommend-prd"></a>
                         </div>
                         <div class="recommend-product-info">
-                            <a href="#" class="product-type">Virtual Reality Glasses</a>
-                            <a href="#" class="product-link">Casco Realidad Virtual PS4 Precio On Sale</a>
+                            <div class="product-type"><a href="#">Virtual Reality Glasses</a></div>
+                            <div class="product-link"><a href="#">Casco Realidad Virtual PS4 Precio On Sale</a></div>
                             <div class="product-rate"><img src="./media/icons/icon-rate.png" alt="icon-rate">
                             </div>
-                            <span class="price">269.99</span>
+                            <div class="price"><span>$269.99</span></div>
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="recommended-prd">
                     <div class="recommend-products">
                         <div class="img-recommend-product">
                             <a href="#"><img src="./media/products/recommend-5.jpg" alt="-img-recommend-prd"></a>
                         </div>
+
                         <div class="recommend-product-info">
-                            <a href="#" class="product-type">Loudspeaker</a>
-                            <a href="#" class="product-link">The Most Popular Items In Portable Bluetooth</a>
+                            <div class="product-type"><a href="#">Loudspeaker</a></div>
+                            <div class="product-link"><a href="#">The Most Popular Items In Portable Bluetooth</a></div>
                             <div class="product-rate"><img src="./media/icons/icon-rate.png" alt="icon-rate">
                             </div>
-                            <span class="price">100.00</span>
+                            <div class="price"><span>$100.00</span></div>
                         </div>
                     </div>
                 </div>
@@ -1007,9 +1035,10 @@
             </div>
             <div class="blogs-grid">
                 <div class="row">
-                    <div class="col">
+                    <div class="col" id="blog-1">
                         <div class="info-blog">
-                            <div class="img-blogs"><a href="#"><img src="./media/blogs/place hold.jpg" alt="img-blogs"></a>
+                            <div class="img-blogs"><a href="#"><img src="./media/blogs/place hold.jpg"
+                                        alt="img-blogs"></a>
                             </div>
                             <div>
                                 <label class="date-of-blog">
@@ -1024,14 +1053,14 @@
                                     <span class="by">in</span>
                                     <a href="#" class="uncate">Uncategorized</a>
                                 </div>
-    
-                                <a href="#" class="blogs-name">Most Visited Pages Of Electronics Post : November
-                                    2020</a>
+
+                                <div><a href="#" class="blogs-name">Most Visited Pages Of Electronics Post : November
+                                        2020</a></div>
+                                <div class="read-more"><a href="#" class="btn-read-more">Read More</a></div>
                             </div>
-                            <a href="#" class="btn-read-more">Read More</a>
                         </div>
                     </div>
-    
+
                     <div class="col">
                         <div class="info-blog">
                             <div>
@@ -1051,14 +1080,15 @@
                                     <span class="by">in</span>
                                     <a href="#" class="uncate">Uncategorized</a>
                                 </div>
-                                <a href="#" class="blogs-name">Most Read Articles – Ti Analogue, Intel Subsidies, Nasa
-                                    Spacesu</a>
+                                <div><a href="#" class="blogs-name">Most Read Articles – Ti Analogue, Intel Subsidies,
+                                        Nasa
+                                        Spacesu</a></div>
+                                <div class="read-more"><a href="#" class="btn-read-more">Read More</a></div>
                             </div>
-                            <a href="#" class="btn-read-more">Read More</a>
                         </div>
                     </div>
-    
-                    <div class="col">
+
+                    <div class="col" id="blog-3">
                         <div class="info-blog">
                             <div>
                                 <div class="img-blogs"><a href="#"><img src="./media/blogs/place hold-2.jpg"
@@ -1077,10 +1107,10 @@
                                     <span class="by">in</span>
                                     <a href="#" class="uncate">Uncategorized</a>
                                 </div>
-                                <a href="#" class="blogs-name">Google Releases Its First Android 13 Developer
-                                    Preview</a>
+                                <div><a href="#" class="blogs-name">Google Releases Its First Android 13 Developer
+                                        Preview</a></div>
+                                <div class="read-more"><a href="#" class="btn-read-more">Read More</a></div>
                             </div>
-                            <a href="#" class="btn-read-more">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -1099,7 +1129,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="footer-feature-item">
+                        <div class="footer-feature-item" id="footer-feature-item-2">
                             <div class="footer-feature-gold-text"><span class="item-2">The Goods</span></div>
                         </div>
                     </div>
@@ -1122,7 +1152,9 @@
                                             alt="icon-footer-location"></div>
                                     <span>Address: 8398 N. Oak Valley Street Bronx, NY 10462</span>
                                 </div>
-                                <div class="show-on-map"><a href="#">Show On Map</a></div>
+                                <div class="show-on-map">
+                                    <span id="myImg">Show On Map</span>
+                                </div>
                             </div>
                             <div class="open-time">
                                 <div class="title">Openning Time:</div>
@@ -1210,6 +1242,8 @@
             </div>
         </div>
     </div>
+
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
